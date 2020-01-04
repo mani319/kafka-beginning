@@ -2,3 +2,7 @@
 .idea/
 target/
 *.class
+kafka-basics/target/
+kafka-consumer-es/target/
+kafka-producer-twitter/target/
+kafka-streams-filter/target/
