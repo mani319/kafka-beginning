@@ -74,7 +74,7 @@ public class Producer {
 
             // Create a producer record
             ProducerRecord<String, String> producerRecord =
-                    new ProducerRecord<String, String>("first_topic", msg);
+                    new ProducerRecord<String, String>("twitter_tweets", msg);
 
             // Send Data - Asynchronous
             producer.send(producerRecord, new Callback() {

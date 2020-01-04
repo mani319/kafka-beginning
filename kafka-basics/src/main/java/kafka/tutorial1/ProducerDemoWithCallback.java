@@ -29,7 +29,7 @@ public class ProducerDemoWithCallback {
         for (int i = 0; i < 10; i++) {
             // Create a producer record
             ProducerRecord<String, String> producerRecord =
-                    new ProducerRecord<String, String>("first_topic", "Hello! " + i);
+                    new ProducerRecord<String, String>("twitter_tweets", "Hello! " + i);
 
             // Send Data - Asynchronous
             producer.send(producerRecord, new Callback() {

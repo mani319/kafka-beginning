@@ -28,7 +28,7 @@ public class ConsumerDemoGroups {
         KafkaConsumer<String, String> consumer = new KafkaConsumer<>(properties);
 
         // Listen to messages
-        consumer.subscribe(Arrays.asList("first_topic", "second_topic"));
+        consumer.subscribe(Arrays.asList("twitter_tweets", "second_topic"));
 
         // Poll for new data
         while (true) {

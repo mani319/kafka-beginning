@@ -27,7 +27,7 @@ public class ProducerDemoWithKeys {
         KafkaProducer<String, String> producer = new KafkaProducer<>(properties);
 
         for (int i = 0; i < 10; i++) {
-            String topic = "first_topic";
+            String topic = "twitter_tweets";
             String value = "Hello! " + i;
             String key = "id_" + i; // Check the consumers using CLI how key works
 

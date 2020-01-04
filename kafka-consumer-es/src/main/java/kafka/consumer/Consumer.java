@@ -39,7 +39,7 @@ public class Consumer {
         KafkaConsumer<String, String> consumer = new KafkaConsumer<>(properties);
 
         // Listen to messages
-        consumer.subscribe(Arrays.asList("first_topic"));
+        consumer.subscribe(Arrays.asList("twitter_tweets"));
 
         // Get ES Client
         RestHighLevelClient client = ElasticSearchClientHelper.getHighLevelClient();

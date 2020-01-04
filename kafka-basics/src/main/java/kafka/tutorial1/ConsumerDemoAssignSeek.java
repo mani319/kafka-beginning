@@ -31,7 +31,7 @@ public class ConsumerDemoAssignSeek {
         // Assign and Seek are mostly used to replay data or fetch a specific message
 
         // Assign
-        TopicPartition partitionToReadFrom = new TopicPartition("first_topic", 0);
+        TopicPartition partitionToReadFrom = new TopicPartition("twitter_tweets", 0);
         long offsetToReadFrom = 15L;
         consumer.assign(Collections.singleton(partitionToReadFrom));
 

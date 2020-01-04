@@ -84,7 +84,7 @@ public class ConsumerDemoWithThread {
 
         // Create latch and consumer runnable
         CountDownLatch latch = new CountDownLatch(1);
-        Runnable myConsumerRunnable = new ConsumerRunnable(latch, properties, "first_topic");
+        Runnable myConsumerRunnable = new ConsumerRunnable(latch, properties, "twitter_tweets");
 
         // Start the thread
         Thread myThread = new Thread(myConsumerRunnable);
